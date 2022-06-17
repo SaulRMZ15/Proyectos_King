@@ -1,0 +1,70 @@
+/*********************************************************************
+
+    Template Name: Kanay - Portfolio HTML 5 Template
+    Template URI: https://themeforest.net/user/createuiux
+    Description: A 'Kanay – Portfolio HTML 5 Template' is perfect if you like a clean and modern design. This theme is ideal for Agency, Freelancer, Portfolio, and those who need an easy, attractive and effective way to share their work with clients.
+    Author: createuiux
+    Version: 1.0
+    Author URI: http://theme.createuiux.com
+    Note: This is style scss.
+
+*********************************************************************/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography 
+# Section Title(With All Title)
+# Button
+# Header Style
+# Slider
+# Video	
+# Layouts 
+    ## List Stule Circle
+    ## List Style Check
+    ## Promo Area
+    ## Professional Skill Area
+    ## Get Touch Area
+    ## Brand Area
+    ## Pricint Table Area
+    ## Career Area
+    ## Single Career Area
+    ## Appointment Area
+    ## Counter Area
+    ## Contact page
+        ### Contact Info Area
+        ### Newsletter Area
+    ## Video player styles
+    ## Error Page Styles
+    ## Layout Responsive
+# About
+# Portfolio
+# Team
+# Footer Area
+# Testimonail
+# Services
+    ## services Style one
+    ## services Style two
+# blog
+    ## Single Blog
+--------------------------------------------------------------*/
+
+
+// Imports
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "components/section-title";
+@import "components/buttons";
+@import "layouts/header";
+@import "layouts/slider";
+@import "layouts/video";
+@import "layouts/layouts";
+@import "layouts/about";
+@import "layouts/portfolio";
+@import "layouts/team";
+@import "layouts/footer";
+@import "layouts/testimonial";
+@import "layouts/services";
+@import "layouts/blog";

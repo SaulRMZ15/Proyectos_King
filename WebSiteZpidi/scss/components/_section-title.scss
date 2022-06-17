@@ -1,0 +1,188 @@
+// Note: This is section title styles
+
+/* Section title*/
+.section_title{
+	padding-bottom:42px;
+	.title__heading{
+		font-size:50px;
+		position:relative;
+        margin: 0 0 15px;
+        font-weight: 900;
+        color: $primary-color;
+	}
+}
+.section_title > p,
+.page_title > p {
+    font-weight: 200;
+    letter-spacing: 0.5em;
+}
+
+/* Page Header Area */
+.page_heading_area {
+    background-attachment: fixed;
+    &:after {
+        background-color: rgba($primary-color,0.7);
+    }
+    .page_title {
+        color: #fff;
+        display: inline-block;
+        padding: 30px 15px;
+        position: relative;
+        > h1 {
+            color: #fff;
+            display: inline-block;
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin: 0 0 5px;
+            position: relative;
+            z-index: 1;
+        }
+        > p {
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+        }
+        .divider {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 0;
+            > span {
+                &:before,
+                &:after {
+                    background-color: #fff;
+                    content: "";
+                    position: absolute;
+                }
+                &:before {
+                    height: 3px;
+                    width: 50px;
+                }
+                &:after {
+                    height: 50px;
+                    width: 3px;
+                }
+                &:nth-child(1){
+                    &:before,
+                    &:after{ 
+                        top: 15px;
+                        left: -10px;
+                    }
+                }
+                &:nth-child(2){
+                    &:before,
+                    &:after{ 
+                        bottom: 10px;
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Headline */
+.headline {
+    border-bottom: 1px solid #efefef;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 23px;
+    margin-top: 0;
+    padding-bottom: 22px;
+    position: relative;
+    text-transform: capitalize;
+    color: $primary-color;
+    &:before {
+        background-color: $primary-color;
+        bottom: -1px;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 195px;
+    }
+}
+
+
+// Notebook device
+@media #{$notebook-device-max}{
+    .section_title .title__heading {
+        margin: 0 0 10px;
+    }
+    .section_title > p, 
+    .page_title > p {
+        letter-spacing: 0.4em;
+    }
+}
+
+// Tablet device
+@media #{$tablet-device-max}{
+    .section_title {
+        padding-bottom: 25px;
+    }
+    .page_heading_area .page_title {
+        padding: 27px 15px;
+        > h1 {
+            font-size: 40px;
+        }
+    }
+    .section_title .title__heading {
+        font-size: 42px;
+        margin: 0 0 7px;
+    }
+    .section_title > p, 
+    .page_title > p {
+        letter-spacing: 0.3em;
+    }
+}
+
+// Large mobile device
+@media #{$large-mobile-max}{
+    .section_title {
+        padding-bottom: 30px;
+        .title__heading {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+    }
+    .page_heading_area .page_title {
+        > h1 {
+            font-size: 34px;
+            margin-bottom: 5px;
+        }
+    }
+    .section_title > p, 
+    .page_title > p {
+        letter-spacing: 0.15em;
+    }
+    .headline {
+        font-size: 24px;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+    }
+}
+// Small device
+@media #{$small-mobile}{
+    .section_title > p, 
+    .page_title > p {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
+    .section_title {
+        padding-bottom: 20px;
+        .title__heading {
+            font-size: 26px;
+        }
+    }
+    .page_heading_area .page_title{
+        > h1 {
+            font-size: 26px;
+        }
+        padding: 0;
+        .divider {
+            display: none;
+        }
+    }
+}

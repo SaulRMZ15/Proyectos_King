@@ -1,0 +1,977 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ZPIDI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <link href ="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,400i,500,700,900" rel="stylesheet">
+    
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Plugins css -->
+    <link rel="stylesheet" href="css/plugins.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+     <!-- Start Site Header(encabezado del sitio de inicio) -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-12 col-sm-10 col-xs-8">
+                    <div class="logo-menu-wrap hidden-xs hidden-sm">
+                        <div class="logo">
+                            <a href="index.html">
+                                <!-- Aquí va el logo, cambiar a logo zpidi.-->
+                                 <img src="images/logo/1.png" alt="logo">
+                            </a>
+                        </div>
+                        <!-- Aquí inicia el menu con la pestaña home -->
+                        <nav class="menu">
+                            <ul class="mainmenu">
+                                <li class="current dropdown-trigger"><a href="#"><span class="mdi mdi-home-outline"></span>Home</a>
+                                    <ul class="dropdown-content">
+                                        <!-- Pestaña donde se muestran los index, sólo usaremos el index.html-->
+                                        <li><a href="index.html">ZPIDI Delivery</a></li>
+                                        <!-- <li><a href="index-original.html">home two</a></li>
+                                        <li><a href="index-3.html">home three</a></li> -->
+                                    </ul>
+                                </li>
+                                <!-- pestaña servicios -->
+                                <li><a href="services.html"><span class="mdi mdi-animation-outline"></span>Servicios</a></li>
+                                <li class="dropdown-trigger">
+                                    <!-- pestaña portafolio-->
+                                    <a href="#"><span class="mdi mdi-map-marker-path"></span>Comarca</a>
+                                    <ul class="dropdown-content"> 
+                                        <!-- <li><a href="portfolio.html">Portfolio col 2</a></li>
+                                        <li><a href="portfolio-col-3.html">Portfolio col 3</a></li>
+                                        <li><a href="portfolio-col-4.html">Portfolio col 4</a></li> -->
+                                        <li><a href="single-portfolio.html">Delivery</a></li>
+                                    </ul>
+                                </li>
+                                <!-- pestaña features -->
+                                <li class="dropdown-trigger"><a href="#"><span class="mdi mdi-domain"></span>Compañia</a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="about-us.html">Nosotros</a></li>
+                                        <li><a href="pricing-table.html">Precios</a></li>
+                                        <li><a href="portfolio.html">Centro de ayuda</a></li>
+                                        <!-- <li><a href="career.html">Career</a></li>
+                                        <li><a href="single-career.html">single career</a></li>
+                                        <li><a href="single-team.html">single team</a></li>
+                                        <li><a href="404.html">404</a></li> -->
+                                    </ul>
+                                </li>
+                                <!-- Pestaña blog-->
+                                <li class="dropdown-trigger"><a href="#"><span class="mdi mdi-account-circle-outline"></span>Afiliados</a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="blog.html">Tenderos</a></li>
+                                        <li><a href="single-blog.html">Socio reparto</a></li>
+                                        <li><a href="single-blog-video.html">Administración</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Contactanos -->
+                                <li><a href="contact.html"><span class="mdi mdi-card-account-phone-outline"></span>Contacto</a></li>
+                                <li><a href="login.html"><span class="mdi mdi-login-variant"></span>LOGIN</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mobile-menu hidden-md hidden-lg">
+                        <a class="mobile-logo" href="index.html"><img src="images/logo/1.png" alt="logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- End Site Header (termina el menú)-->
+
+    <!-- For Sticky header -->
+    <div id="sticky-header"></div>
+
+    <!-- Start slider area (Area de banner principal)-->
+    <div class="slider">
+        <div class="slider_inner owl-carousel">
+            <!-- Start slider item -->
+            <div class="slider_item slider_style_two bg_overlay">
+                <div class="slider_bg_thumb bg-image" style="background-image: url(images/slider/2.jpg);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-10 col-xs-12">
+                            <div class="slider_content text-white">
+                                <h1 class="slider_title">ENTREGAMOS TUS PRODUCTOS <br>A TIEMPO</h1>
+                                <p class="slider_subtitle">TORREÓN | GÓMEZ PALACIO | LERDO | MATAMOROS | FRANCISCO I MADERO | SAN PEDRO </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End slider item -->
+            
+            <!-- Start slider item -->
+            <div class="slider_item slider_item_one">
+                <div class="slider_bg_thumb bg-image" style="background-image: url(images/slider/1.jpg);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="slider_content_outer">
+                                <div class="slider_content text-white text-center">          
+                                    <span class="mdi mdi-food-outline"></span>
+                                    <h1 class="slider_title">COMIDA & PRODUCTOS</h1>
+                                    <p class="slider_subtitle">Si tu negocio está relacionado a alimentos o productos tales cómo piezas, refacciones, medicinas, etc. ZPIDI puede hacer la entrega por ti</p>
+                                    <a class="btn btn-default" href="#">CONTACTANOS<i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End slider item -->  
+            
+            <!-- Start slider item -->
+            <div class="slider_item slider_style_two bg_overlay">
+                <div class="slider_bg_thumb bg-image" style="background-image: url(images/slider/3.jpg);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-10 col-xs-12">
+                            <div class="slider_content text-white">
+                                <h1 class="slider_title"> UNA RAPIDA ENTREGA <br>A DOMICILIO</h1>
+                                <p class="slider_subtitle">Nuestra misión es entregar justo a tiempo! </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End slider item -->
+        </div>
+    </div>
+    <!-- End slider area (Fin de index principal)-->
+
+    <!-- Start page section area (inicio area de seccion de paginas) -->
+    <section id="page-section" class="page-section">
+        <!-- work-progress -->
+        <div class="about-area about-style-two mb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="smudge_tab">
+                            <!--Start Smudge Tab Nav (banner de informacion)-->
+                            <ul class="nav smudge_tab_nav mb-110" role="tablist">
+                                <li class="active">
+                                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                        <i class="mdi mdi-account-plus-outline"></i> AFILIACIÓN
+                                        <p>Sé parte de ZPIDI ahora</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                        <i class="mdi mdi-storefront-outline"></i> MI TIENDA
+                                        <p>La opción que necesitas</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                                        <i class="mdi mdi-motorbike-electric"></i> REPARTO
+                                        <p>Socios siempre al alcance</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                                        <i class="mdi mdi-map-marker-radius-outline"></i> ZONAS
+                                        <p>Cobertura en toda La Laguna</p>
+                                    </a>
+                                </li>
+                            </ul><!-- End Smudge Tab Nav -->
+                            
+                            <!-- Start Tab Content (contenido)-->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active best_choice_area best_choice_style_two" id="home">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="about_thumb_area">
+                                                <figure class="biography_midea biography_thumb image_effect">
+                                                    <img src="images/thumbnil/4.jpg" alt="thumb">
+                                                </figure><!--/.biography_midea-->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <h3 class="tab-title">¿Por qué somos diferentes?</h3>
+                                            <p>&#8226; El mejor servicio de Delivery en la Comarca<br>
+                                            &#8226; Asociarte con ZPIDI será la manera más sencilla para atraer más clientes y llevar tu negocio al siguiente nivel<br>
+                                            &#8226; Contarás con las mejores herramientas de venta(App, call center, punto de venta)<br>
+                                            &#8226; La mejor cobertura y condiciones de reparto, asegurando rapidez y entrega oportuna<br>
+                                            &#8226; Politica de cero comisión, podrás mantener tus precios sin incremento en la plataforma<br>
+                                            &#8226; Servicio diseñado para micro, pequeña, mediana empresa y más</p>
+                                            <div class="process_setps"> 
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <div class="single_process">
+                                                            <span class="flaticon-multimedia-1"></span>
+                                                            <h3>Operación</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <div class="single_process">
+                                                            <span class="flaticon-language"></span>
+                                                            <h3>Administración</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <div class="single_process">
+                                                            <span class="flaticon-telemarketer"></span>
+                                                            <h3>Soporte 24/7 </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane about-style-one " id="profile">
+                                    <!-- Start About Area (our work process)-->
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <div class="about_content">
+                                                <h3>Asegura ventas con ZPIDI.</h3>
+                                                <ul class="list_style_square">
+                                                    <li>Vender nunca fue tan fácil.</li>
+                                                </ul>
+                                                <p>Todo negocio de comida necesita entregas de calidad. 
+                                                    ZPIDI asegura a cada cliente que su pedido estará en tiempo y forma de un click a sus manos, 
+                                                    gracias a la app de fácil acceso cada negocio podrá obtener más pedidos y satisfacer más clientes. 
+                                                    </p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <div class="about_thumb_area">
+                                                <figure class="about_thumb image_effect">
+                                                    <img src="images/about/1.jpg" alt="thumb">
+                                                    <div class="video__inner">
+                                                        <a href="https://www.youtube.com/watch?v=dBlBYP1pQgE" class="video__trigger"><i class="fa fa-play"></i></a>
+                                                    </div>
+                                                </figure><!--/.about_thumb-->
+                                                <a class="btn btn-about"><span>Explore</span>More About us<i class="flaticon-right-arrow"></i></a>
+                                            </div><!--/.about_thumb_area-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane best_choice_area" id="messages">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <h3 class="tab-title">+ Rápidos</h3>
+                                            <p>El sistema de reparto siempre debe ser prioridad, 
+                                                pues es uno de los puntos que aseguran que los clientes vuelvan a usar la plataforma. 
+                                                Por ello nuestros socios reparto están altamente capacitados para realizar cada entrega de manera personalizada, 
+                                                enfocándose en rapidez, seguridad, calidad e higiene. Para que cada pedido llegue al cliente cómo lo solicitó. </p>
+                                            <div class="tab-acc-panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                <div class="panel tab-acc-panel">
+                                                    <div class="tab-acc-panel-heading" role="tab" id="headingOne">
+                                                      <h5 class="tab-acc-panel-title">
+                                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+                                                            ¿Cómo puedo ser un socio reparto?  <span class="acc_toggle_icon"></span>
+                                                        </a>
+                                                      </h5>
+                                                    </div>
+                                                    <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                      <div class="tab-acc-body">
+                                                        <p>Accede al apartado Socio reparto en la plataforma ZPIDI para obtener más información.</p>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel tab-acc-panel">
+                                                    <div class="tab-acc-panel-heading" role="tab" id="headingTwo">
+                                                      <h5 class="tab-acc-panel-title">
+                                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+                                                            ¿Qué horario maneja un socio reparto?  <span class="acc_toggle_icon"></span>
+                                                        </a>
+                                                      </h5>
+                                                    </div>
+                                                    <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                      <div class="tab-acc-body">
+                                                        <p>Cada socio reparto elige libremente las horas para comenzar a obtener ingresos diarios.</p>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel tab-acc-panel">
+                                                    <div class="tab-acc-panel-heading" role="tab" id="headingThree">
+                                                      <h5 class="tab-acc-panel-title">
+                                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree">
+                                                            ¿Cuáles son los beneficios de ZPIDI? <span class="acc_toggle_icon"></span>
+                                                        </a>
+                                                      </h5>
+                                                    </div>
+                                                    <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                      <div class="tab-acc-body">
+                                                          <p>Facilidad y calidad a la hora de comenzar a trabajar.</p>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="about_thumb_area">
+                                                <figure class="biography_midea biography_thumb image_effect">
+                                                    <img src="images/thumbnil/3.jpg" alt="thumb">
+                                                </figure><!--/.biography_midea-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane biography-area" id="settings">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="biography_content">
+                                                <h2 class="biography_title">Actualmente nuestro servicio opera únicamente en La Laguna. </h2>
+                                                <p>En cualquier punto de La Laguna localizaremos y ofreceremos los negocios de comida que más cercanos estén a cada cliente
+                                                     y poder asegurar así la satisfacción al usar nuestra plataforma. </p>
+                                                <p>Operamos en:</p>
+                                                <ul class="list_style_circle">
+                                                    <li>TORREÓN.</li>
+                                                    <li>GÓMEZ PALACIO.</li>
+                                                    <li>LERDO.</li>
+                                                </ul>
+                                                <p></p>
+                                            </div><!--/.biography_content-->
+                                        </div><!--/.col-md-6-->
+                                        <div class="col-md-5">
+                                            <div class="about_thumb_area">
+                                                <figure class="biography_midea biography_thumb image_effect">
+                                                    <img src="images/about/2.jpg" alt="thumb">
+                                                </figure><!--/.biography_midea-->
+                                            </div>
+                                        </div><!--/.col-md-6-->
+                                    </div>
+                                </div>
+                            </div><!-- End Tab Content(final tabla de contenido)-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Promo Area (banner para contacto) -->
+        <div class="promo_area mt-103 mb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="promo_content text-center">
+                            <h2>¿Cómo vender en ZPIDI?</h2
+                            <p>Contacta a uno de nuestros Ejecutivos, para atender tu proyecto</p>
+                            <div class="btn_group_button">
+                                <a class="btn btn-default btn-yellow" href="contact.html">Información</a>
+                                <a class="btn btn-default btn-blue" href="#">Llamar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Promo Area (fin banner para contacto)-->
+       
+        <!-- Start Services Area (Area de servicios)-->
+        <div class="services-area services-style-one mb-90 mt-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="section_title text-center">
+                            <h2 class="title__heading text-capitalize">Servicios</h2>
+                            <p>Servicio de entrega en Comarca Lagunera</p>
+                        </div><!--/.section_title-->
+                    </div>
+                </div><!--/.row-->
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <!-- Start services thumb area -->
+                        <div class="services_thumb_area">
+                            <figure class="services_thumb image_effect">
+                                <img src="images/services/1.jpg" alt="thumb">
+                                <a class="btn btn-default" href="contact.html">CONTACTO</a>
+                            </figure>
+                        </div><!-- End services thumb area -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <!-- Star Services Carousel -->
+                            <!--<div class="services_carousel owl-carousel">-->
+                            <!-- Star Carousel Item -->
+                            <div class="item">
+                                <div class="row">
+                                    <!-- Start Single Service -->
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            
+                                                <span class="service_icon mdi mdi-tablet-cellphone"></span>
+                                                <h3>APP</h3>
+                                                <p> Descarga nuestra app
+                                                </p>
+                                                <div>
+                                                    <table class="browserref notranslate">
+                                        
+                                                        <tr style="border: none !important;">
+                                                            <th style="text-align:center">
+                                                                <a href="https://play.google.com/"target="_blank"><img src="images/services/google.png"></a>
+                                                            </th>
+                                                            <th style="text-align:center"> 
+                                                                <a href="https://www.apple.com/app-store/"target="_blank"><img src="images/services/apple.png"></a>
+                                                            </th>
+                                                        </tr>
+                                                   
+                                                    </table>
+                                                </div>
+                                            
+                                            
+
+                                            
+                                                    <!--<div class = "myDivgoogle">
+                                                    <figure class="services_thumb image_effect" align="left" width="20" height="20" >
+                                                        <img src="images/services/google.png" >
+                                            
+                                                    </figure> 
+                                                </div>
+                                                
+                                                <div class = "myDivapple">
+                                                <figure class="services_thumb image_effect" align="right"> 
+                                                    <img src="images/services/apple.png"  >
+                                                    
+                                                </figure></div>
+                                            </div>-->
+                            
+                            
+                                        </div>
+                                    </div><!-- End Single Service -->
+                                    <!-- Start Single Service -->
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon mdi mdi-laptop"></span>
+                                            <h3>PORTAL</h3>
+                                            <p>Si ya eres socio ZPIDI, podrás accesar a tu plataforma Tendero o Repartidores. </p>
+                                        </div>
+                                    </div><!-- End Single Service -->
+
+                                    <div class="clearfix hidden-sm hidden-xs"></div>
+
+                                    <!-- Start Single Service -->
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon mdi mdi-handshake-outline"></span>
+                                            <h3>INTEGRACION</h3>
+                                            <p>Conectamos tu negocio a la plataforma ZPIDI. Solicita información. </p>
+                                        </div>
+                                    </div><!-- End Single Service -->
+                                    <!-- Start Single Service -->
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon mdi mdi-face-agent"></span>
+                                            <h3>SOPORTE</h3>
+                                            <p>Para dudas e incidentes, ponemos a tu alcance nuestro canal de Soporte 7/24. </p>
+                                        </div>
+                                    </div><!-- End Single Service -->
+                                </div>
+                            </div><!-- End Carousel Item -->
+                            <!-- Star Carousel Item -->
+                            <div class="item">
+                                <div class="row">
+                                    <!-- Start Single Service -->
+                            <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon flaticon-coding"></span>
+                                            <h3>Responsive Design</h3>
+                                            <p>Lorem Ipsum is simply  dummy text of the printing and type setting industry lorem </p>
+                                        </div>
+                                    </div>--><!-- End Single Service -->
+                                    <!-- Start Single Service -->
+                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon flaticon-responsive"></span>
+                                            <h3>Web Development</h3>
+                                            <p>Lorem Ipsum is simply  dummy text of the printing and type setting industry lorem </p>
+                                        </div>
+                                    </div>--><!-- End Single Service -->
+
+                                    <div class="clearfix hidden-sm hidden-xs"></div>
+
+                                    <!-- Start Single Service -->
+                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon flaticon-language"></span>
+                                            <h3>Programming</h3>
+                                            <p>Lorem Ipsum is simply  dummy text of the printing and type setting industry lorem </p>
+                                        </div>
+                                    </div>--><!-- End Single Service -->
+                                    <!-- Start Single Service -->
+                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon flaticon-vector-1"></span>
+                                            <h3>Graphic Design</h3>
+                                            <p>Lorem Ipsum is simply  dummy text of the printing and type setting industry lorem </p>
+                                        </div>
+                                    </div>--><!-- End Single Service -->
+                                </div>
+                            </div><!-- End Carousel Item -->
+                            <!-- Star Carousel Item -->
+                            <div class="item">
+                                <div class="row">
+                                    <!-- Start Single Service -->
+                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon flaticon-responsive"></span>
+                                            <h3>Responsive Design</h3>
+                                            <p>Lorem Ipsum is simply  dummy text of the printing and type setting industry lorem </p>
+                                        </div>
+                                    </div>--><!-- End Single Service -->
+                                    <!-- Start Single Service -->
+                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon flaticon-coding"></span>
+                                            <h3>Web Development</h3>
+                                            <p>Lorem Ipsum is simply  dummy text of the printing and type setting industry lorem </p>
+                                        </div>
+                                    </div>--><!-- End Single Service -->
+
+                              <!--<div class="clearfix hidden-sm hidden-xs"></div>-->
+
+                                    <!-- Start Single Service -->
+                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon flaticon-language"></span>
+                                            <h3>Programming</h3>
+                                            <p>Lorem Ipsum is simply  dummy text of the printing and type setting industry lorem </p>
+                                        </div>
+                                    </div>--><!-- End Single Service -->
+                                    <!-- Start Single Service -->
+                                    <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="single_service text-center">
+                                            <span class="service_icon flaticon-vector-1"></span>
+                                            <h3>Graphic Design</h3>
+                                            <p>Lorem Ipsum is simply  dummy text of the printing and type setting industry lorem </p>
+                                        </div>
+                                    </div>--><!-- End Single Service -->
+                                </div>
+                            </div><!-- End Carousel Item -->
+                        </div><!-- End Services Carousel -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Services Area (Fin area de servicios)-->
+       
+        <!-- Start Working Area (Area de trabajo)-->
+        <div id="work" class="working_area mt-94">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="section_title text-center">
+                            <h2 class="title__heading text-capitalize">Herramientas adicionales</h2>
+                            <p>PUNTO DE VENTA | CALL CENTER | INTEGRACION</p>
+                        </div><!--/.section_title-->
+                    </div>
+                </div><!--/.row-->
+                <div class="row">
+                    <!-- Start Single Work -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="work_item">
+							<div class="work_thumb">
+								<img src="images/portfolio/1.jpg" alt="project1" class="img-responsive">
+							</div>
+							<div class="work_hover_mask">
+								<div class="mask-container text-center">
+									<h4>POS</h4>
+									<div class="divider-border"></div>
+									<p>Punto de Venta desde tu Móvil ON CLOUD.</p>
+									<a class="btn btn-default" href="single-portfolio.html">Project details</a>
+								</div>
+							</div>
+						</div>
+                    </div><!-- End Single Work -->
+                    <!-- Start Single Work -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="work_item">
+							<div class="work_thumb">
+								<img src="images/portfolio/2.jpg" alt="project2" class="img-responsive">
+							</div>
+							<div class="work_hover_mask">
+								<div class="mask-container text-center">
+									<h4>CALL CENTER</h4>
+									<div class="divider-border"></div>
+									<p>Recibe tus pedidos desde nuestro centro de atención.</p>
+									<a class="btn btn-default" href="single-portfolio.html">Project details</a>
+								</div>
+							</div>
+						</div>
+                    </div><!-- End Single Work -->
+                    <!-- Start Single Work -->
+                     <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="work_item">
+							<div class="work_thumb">
+								<img src="images/portfolio/3.jpg" alt="project3" class="img-responsive">
+							</div>
+                            <div class="work_hover_mask">
+								<div class="mask-container text-center">
+									<h4>APP ZPIDI</h4>
+									<div class="divider-border"></div>
+									<p>Registra tu negocio  en ZPIDI y vende más. No importa el tamaño, el objetivo es vender.</p>
+									<a class="btn btn-default" href="single-portfolio.html">Project details</a>
+								</div>
+							</div>
+						</div>
+                    </div><!-- End Single Work -->
+                    <!-- Start Single Work -->
+                     <!--<div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="work_item">
+							<div class="work_thumb">
+								<img src="images/portfolio/4.jpg" alt="project4" class="img-responsive">
+							</div>
+							<div class="work_hover_mask">
+								<div class="mask-container text-center">
+									<h4>Web Design</h4>
+									<div class="divider-border"></div>
+									<p>Lorem ipsum dolor sit amet, consetur adipiscing elit. Aliquam enim enim, pharetra in sodales at, interdum sit</p>
+									<a class="btn btn-default" href="single-portfolio.html">Project details</a>
+								</div>
+							</div>
+						</div>
+                    </div>--><!-- End Single Work -->
+                    <!-- Start Single Work -->
+                   <!--<div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="work_item">
+							<div class="work_thumb">
+								<img src="images/portfolio/5.jpg" alt="project5" class="img-responsive">
+							</div>
+							<div class="work_hover_mask">
+								<div class="mask-container text-center">
+									<h4>Web Design</h4>
+									<div class="divider-border"></div>
+									<p>Lorem ipsum dolor sit amet, consetur adipiscing elit. Aliquam enim enim, pharetra in sodales at, interdum sit</p>
+									<a class="btn btn-default" href="single-portfolio.html">Project details</a>
+								</div>
+							</div>
+						</div>
+                    </div>--><!-- End Single Work -->
+                    <!-- Start Single Work -->
+                    <!--<div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="work_item">
+							<div class="work_thumb">
+								<img src="images/portfolio/6.jpg" alt="project6" class="img-responsive">
+							</div>
+							<div class="work_hover_mask">
+								<div class="mask-container text-center">
+									<h4>Web Design</h4>
+									<div class="divider-border"></div>
+									<p>Lorem ipsum dolor sit amet, consetur adipiscing elit. Aliquam enim enim, pharetra in sodales at, interdum sit</p>
+									<a class="btn btn-default" href="single-portfolio.html">Project details</a>
+								</div>
+							</div>
+						</div>
+                    </div>--><!-- End Single Work -->
+                </div>
+            </div>
+        </div><!-- End Working Area -->
+        
+        <!-- Start Services Area -->
+        <div class="working_process_area mt-94 mb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="section_title text-center">
+                            <h2 class="title__heading text-capitalize">Solicitud</h2>
+                            <p>Ruta de afiliación ZPIDI</p>
+                        </div><!--/.section_title-->
+                    </div>
+                </div><!--/.row-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs workprocess_tab" role="tablist">
+                            <li class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab"><span>01</span>Registro</a></li>
+                            <li><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab"><span>02</span>Validación</a></li>
+                            <li><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab"><span>03</span>Respuesta</a></li>
+                            <li><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab"><span>04</span>Vive la aventura!</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content workprocess_tab_content">
+                            <div role="tabpanel" class="tab-pane best_choice_area active" id="home2">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <h3 class="tab-title">Una plataforma para todos</h3>
+                                        <p>En ZPIDI , "NO" hay incremento de tus PRECIOS
+                                            ademas de una politica de "Cero" COMISION.</p>
+                                        <div class="tab-acc-panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                            <div class="panel tab-acc-panel">
+                                                <div class="tab-acc-panel-heading" role="tab" id="headingOne2">
+                                                  <h5 class="tab-acc-panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                      Tenderos <span class="acc_toggle_icon"></span>
+                                                    </a>
+                                                  </h5>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
+                                                  <div class="tab-acc-body">
+                                                    <p>A partir de ZPIDI, tu negocio puede contar con un nuevo canal de ventas
+                                                        Solo necesitas registrar tu Solicitud como " TENDERO ZPIDI",
+                                                        Seguir el proceso a traves de uno de nuestros Ejecutivos de Ventas
+                                                        Activaremos ru negocio en la Plataforma, ZPIDI pone a tu alcance
+                                                        su "TENDERO PORTAL", para seguir tus VENTAS...</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel tab-acc-panel">
+                                                <div class="tab-acc-panel-heading" role="tab" id="headingTwo2">
+                                                  <h5 class="tab-acc-panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                      Repartidores<span class="acc_toggle_icon"></span>
+                                                    </a>
+                                                  </h5>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
+                                                  <div class="tab-acc-body">
+                                                    <p>En ZPIDI, Solicita el registro en 
+                                                        PORTAL Quiero ser REPARTIDOR, y en menos de 12 Horas, 
+                                                        podras ser REPARTIDOR.
+                                                        
+                                                        En ZPIDI ,tu COMISION es al instante,
+                                                        Contra entrega tu comision es inmediata.
+                                                        
+                                                        Que esperas, registrate y GANA MAS con ZPIDI.</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel tab-acc-panel">
+                                                <div class="tab-acc-panel-heading" role="tab" id="headingThree2">
+                                                  <h5 class="tab-acc-panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                      Preguntas <span class="acc_toggle_icon"></span>
+                                                    </a>
+                                                  </h5>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+                                                  <div class="tab-acc-body">
+                                                      <p>NUESTRA UBICACION ZPIDI, 
+                                                        Para tu tranquilidad tenemos oficinas en la Comarca Lagunera,
+                                                        Te invitamos a visitar nuestra liga de CONTACTO
+                                                        
+                                                        COMO CONTACTAR UN EJECUTIVO DE VENTAS?
+                                                        
+                                                        TIEMPO DE ESPERA PARA MI TIENDA PLATAFORMA?
+                                                        
+                                                        TIEMPO PARA INICIAR MIS REPARTOS ?</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="about_thumb_area">
+                                            <figure class="biography_midea biography_thumb image_effect">
+                                                <img src="images/thumbnil/3.jpg" alt="thumb">
+                                            </figure><!--/.biography_midea-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane about-style-one" id="profile2">
+                                <!-- Start About Area -->
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <div class="about_content">
+                                            <h3>We’re Dynamic team of talented people of 
+                innovative & marketing expert.</h3>
+                                            <ul class="list_style_square">
+                                                <li>We Are Best Digital Agency in Asia</li>
+                                            </ul>
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years.</p>
+                                            <p>content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their sites still in their infancy. Various versions have evolved over the years.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <div class="about_thumb_area">
+                                            <figure class="about_thumb image_effect">
+                                                <img src="images/about/1.jpg" alt="thumb">
+                                                <div class="video__inner">
+                                                    <a href="https://www.youtube.com/watch?v=dBlBYP1pQgE" class="video__trigger"><i class="fa fa-play"></i></a>
+                                                </div>
+                                            </figure><!--/.about_thumb-->
+                                            <a class="btn btn-about"><span>Explore</span>More About us<i class="flaticon-right-arrow"></i></a>
+                                        </div><!--/.about_thumb_area-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane biography-area" id="messages2">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="biography_content">
+                                            <h2 class="biography_title">Our Digital Agency</h2>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has standard dummy text ever since the 1500s, when an unknown printer took a galley of type and type specimen book. It has survived not only five centuries, but also the leapinto electronic essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets Lorem Ipsum passages, and more recently with desktop publishing software like Aldus Pageof Lorem Ipsum.</p>
+                                            <ul class="list_style_circle">
+                                                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>There are many variations of passages of Lorem Ipsum available</li>
+                                                <li>Simply dummy text of the printing and typesetting industry</li>
+                                                <li>It is a long established fact that a reader will be distracted by the readable</li>
+                                            </ul>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has standard dummy text ever since the 1500s, when an unknown printer took a galley of type. It was popularised in the 1960s with the release of Letraset sheets  Lorem Ipsum passages, and more recently with desktop software like Aldus Page of Lorem Ipsum.</p>
+                                        </div><!--/.biography_content-->
+                                    </div><!--/.col-md-6-->
+                                    <div class="col-md-5">
+                                        <div class="about_thumb_area">
+                                            <figure class="biography_midea biography_thumb image_effect">
+                                                <img src="images/about/2.jpg" alt="thumb">
+                                            </figure><!--/.biography_midea-->
+                                        </div>
+                                    </div><!--/.col-md-6-->
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane best_choice_area best_choice_style_two" id="settings2">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="about_thumb_area">
+                                            <figure class="biography_midea biography_thumb image_effect">
+                                                <img src="images/thumbnil/4.jpg" alt="thumb">
+                                            </figure><!--/.biography_midea-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <h3 class="tab-title">Why We Are Best Choice?</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publiLorem Ipsum is simply dummy text of the printing and typesetting industry.bled it to make a type specimen book. It ha survived not only five centuries, but also the leap into electronic 1960s with the release of Letraset sheets containing.Lorem Ipsum is the standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <div class="process_setps">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="single_process">
+                                                        <span class="flaticon-multimedia-1"></span>
+                                                        <h3>Unique Designs</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="single_process">
+                                                        <span class="flaticon-language"></span>
+                                                        <h3>Clean Code</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="single_process">
+                                                        <span class="flaticon-telemarketer"></span>
+                                                        <h3>24/7 support</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Services Area -->
+    </section>
+    <!-- End page section area -->
+    
+    
+    <!-- Start footer area -->
+    <footer id="footer" class="footer">
+        <!-- Start footer widgets area -->
+        <div class="footer-widgets-area pt-110 pb-22">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-full-width">
+                        <div class="footer__description text-center">
+                            <a href="index.html"><img src="images/logo/footer-logo.png" alt="footer logo"></a>
+                            <p>" Tu entrega justo a tiempo "</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <!-- Start single contact info -->
+                        <div class="single_contact_info">
+                            <span class="icon flaticon-placeholder"></span>
+                            <div class="info">
+                                <p>Boulevard Centenario CP: 27420, Torreón, Coahuila</p>
+                            </div>
+                        </div><!-- End single contact info -->
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <!-- Start single contact info -->
+                        <div class="single_contact_info">
+                            <span class="icon flaticon-telephone"></span>
+                            <div class="info">
+                                <p>Official Fax: 575 051 000</p>
+                                <p>Official Phone: 0123 456 789</p>
+                            </div>
+                        </div><!-- End single contact info -->
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <!-- Start single contact info -->
+                        <div class="single_contact_info">
+                            <span class="icon flaticon-chat"></span>
+                            <div class="info">
+                                <p>Email :<a href="mailto:info@yourwebsite.com">ventas@zpidi.com</a> </p>
+                                <p><a href="#">www.ZPIDI.com</a></p>
+                            </div>
+                        </div><!-- End single contact info -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End footer widgets area -->
+        
+        <!-- Start footer Bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-7 col-xs-12">
+                        <div class="copyright">
+                            <p>&copy; 2022, Marca Registrada, <a href="#">ZPIDI de México,</a> todos los Derechos Reservados.</p>
+                        </div><!-- Copyright Text -->
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-12">
+                        <ul class="footer_social_share">
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul><!-- Footer Social Share -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End footer Bottom area -->
+    </footer>
+    <!-- End footer area -->
+
+    <!-- jQuery javascripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Bootstrap javascrits -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins scripts -->
+    <script src="js/plugins.js"></script>
+    <!-- Main scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+<style>
+    .myDivapple {
+  text-align: left;
+  width: 180px;
+  height: 90px;
+}
+.myDivgoogle {
+  text-align: right;
+  width: 180px;
+  height: 90px;
+}
+
+
+</style>
+</html>
+

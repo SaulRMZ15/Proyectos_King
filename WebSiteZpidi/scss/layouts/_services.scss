@@ -1,0 +1,265 @@
+// Note: This is Services scss.
+
+/*Services styles*/
+
+.services_thumb_area {
+    text-align: center;
+    .services_thumb {
+        position: relative;
+        display: inline-block;
+        > .btn {
+            background-color: $secondary-color;
+            bottom: 50px;
+            color: #121212 !important;
+            font-size: 17px;
+            padding: 15px 40px;
+            position: absolute;
+            right: 0px;
+            z-index: 9;
+            &:hover {
+                background-color: $primary-color;
+                color: #fff!important;
+            }
+        }
+        &:hover img {
+            opacity: 0.9;
+            transform: scale(1.1);
+        }
+    }
+}
+.single_service {
+    margin-bottom: 30px;
+    padding: 50px 15px 35px;
+    @include transition(ease-in-out 0.5s);
+    @include box-shadow(0 0 13px rgba(0,0,0,0.04));
+    .service_icon {
+        display: inline-block;
+        margin-bottom: 5px;
+        height: 70px;
+        line-height: 70px;
+        color: $primary-color;
+        @include transition(ease-in-out 0.5s);
+        &:before {
+            font-size: 60px;
+        }
+    }
+    h3 {
+        @include transition(ease-in-out 0.5s);
+        font-size: 20px;
+        margin-bottom: 13px;
+        text-transform: capitalize;
+        color: #3a3a3a;
+        font-weight: 700;
+        margin: 10px 0 13px;
+    }
+    > p {
+        margin-bottom: 17px;
+    }
+    &:hover {
+        background-color: $primary-color;
+        color: $color-white;
+        .service_icon { 
+            color: $color-white;
+        }
+        > h3 {
+            color: $color-white;
+        }
+    }
+}
+
+.services_carousel > .owl-dots {
+    margin-left: -100px;
+    margin-top: 20px;
+    width: 200px;
+    > .owl-dot {
+        border: 3px solid $primary-color;
+        background-color: transparent!important;
+        &.active {
+            background-color: $primary-color!important;
+        }
+    }
+}
+
+
+/*Services Style Two*/
+.services-style-two {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 105px 0 110px;
+    .section_title .title__heading {
+        color: #fff;
+    }
+    .services_info_content {
+        > h3 {
+            color: #fff;
+        }
+        > .btn {
+            background-color: #fff;
+            color: $primary-color !important;
+            &:hover {
+                background-color: #ffba00;
+                color: #fff !important;
+            }
+        }
+    }
+    .single_service {
+        background-color: #4b2da7;
+        margin-bottom: 10px;
+        min-height: 130px;
+        padding: 35px 35px 33px;
+        @include transition(ease-in-out 0.4s);
+        .service_icon {
+            line-height: 70px;
+            margin-bottom: 8px;
+            &:before {
+                color: #fff;
+                font-size: 50px;
+                @include transition(ease-in-out 0.4s);
+            }
+        }
+        > h3 {
+            color: #fff;
+            font-size: 18px;
+            line-height: 25px;
+            @include transition(ease-in-out 0.4s);
+        }
+        &:hover {
+            background-color: #fff;
+            .service_icon:before,
+            > h3 { 
+                color: $primary-color;
+            }
+        }
+    }
+    .row .row {
+        margin: 0 -5px;
+        > .col-md-4 {
+            padding: 0 5px;
+        }
+    }
+}
+
+
+.services_info_content,
+.wroking_info_content {
+    > h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: -7px 0 19px;
+    }
+    > p {
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+}
+
+
+
+// Notebook device
+@media #{$notebook-device}{
+    .services-style-one .single_service {
+        padding: 30px 15px 27px;
+        .service_icon {
+            height: 45px;
+            line-height: 45px;
+            &:before {
+                font-size: 35px;
+            }
+        }
+        h3 {
+            font-size: 18px;
+            margin: 5px 0 10px;
+        }
+        > p {
+            font-size: 15px;
+            line-height: 1.4em;
+        }
+    }
+    .services_info_content,
+    .wroking_info_content {
+        > p {
+            font-size: 15px;
+            line-height: 1.45em;
+        }
+        > h3 {
+            font-size: 26px;
+        }
+    }
+    .wroking_info_content > h3 {
+        margin-bottom: 15px;
+    }
+    .services-style-two {
+        .single_service {
+            padding: 35px 15px 33px;
+            > h3 {
+                font-size: 17px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+// Tablet device
+@media #{$tablet-device-max}{
+    .services_thumb_area .services_thumb {
+        margin-bottom: 40px;
+    }
+    .services_carousel > .owl-dots {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .services-style-two {
+        padding: 75px 0;
+    }
+    .services_info_content {
+        margin-bottom: 40px;
+    }
+}
+
+
+// Large mobile device
+@media #{$large-mobile-max}{
+    .services-style-one .single_service {
+        padding: 50px 30px 35px;
+        h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    }
+    .services_thumb_area .services_thumb > .btn {
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+    .services_info_content > h3,
+    .wroking_info_content > h3 {
+        font-size: 25px;
+        margin: -7px 0 15px;
+    }
+    .services-style-two .single_service {
+        padding: 35px 60px 33px;
+    }
+}
+
+// Large mobile
+@media only screen and (max-width: 600px){
+    .services-style-two {
+        > .container {
+            margin-bottom: -20px;
+        }
+        .single_service {
+            padding: 35px 15px 33px;
+            margin-bottom: 30px;
+        }
+        .row .row > div {
+            width: 100%;
+        }
+    }
+}
+
+// Small mobile
+@media #{$small-mobile}{
+    .services-style-one .single_service {
+        padding: 40px 15px 25px;
+    }
+}

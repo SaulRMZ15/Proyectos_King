@@ -1,0 +1,165 @@
+// Note: This is button styles
+
+/*Button styles*/
+.btn-default {
+    background-color: $text-color;
+    border: 0px solid !important;
+    border-radius: 0;
+    color: $color-white !important;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    line-height: 45px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0 30px;
+    text-transform: capitalize;
+    @include transition(ease-in-out .3s);
+    @include display(inline-flex);
+    @include align-items(center);
+    z-index: 1;
+    >i.fa {
+        margin-left: 5px;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    > span {
+        font-size: 30px;
+        padding-right: 8px;
+    }
+}
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid #fff !important;
+}
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color !important;
+}
+.btn-subcribe {
+    height: inherit;
+    background-color: $secondary-color;
+}
+.btn-loadmore {
+    padding: 15px 45px;
+    @include box-shadow(0px 10px 8px rgba($primary-color, 0.4));
+    color: #fff !important;
+    i {
+        padding-right: 8px;
+    }
+}
+
+.readmore{
+    color:$primary-color !important;
+    text-transform: uppercase;
+    font:{
+        weight:700;
+    }
+    @include transition(all .3s ease-in-out 0s);
+    &:hover{
+        color:$color-black !important;
+    }
+}
+.btn-default{
+    &:hover,
+    &:focus {
+        color: $color-white !important;
+        background-color: $primary-color;
+    }
+}
+.btn-transparent {
+    &:hover,
+    &:focus {
+        color: $primary-color !important;
+    }
+}
+.btn-primary {
+    &:hover,
+    &:focus {
+        color: $color-white !important;
+        background-color: $secondary-color;
+    }
+}
+.bg-dark {
+    .area_bottom_button .btn-default {
+        background-color: $primary-color;
+        border-color: $primary-color !important;
+    }
+    .area_bottom_button > .btn-default:hover {
+        color: $primary-color !important;
+    }
+}
+.btn-yellow {
+    background-color: #FFCC00;
+    &:hover,
+    &:focus {
+        background-color: #03A9F4 !important;
+    }
+}
+.btn-blue {
+    background-color: #03A9F4;
+    &:hover,
+    &:focus {
+        background-color: #FFCC00 !important;
+    }
+}
+
+.btn-about {
+    background-color: $primary-color;
+    border-radius: 0;
+    bottom: -32px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4em;
+    padding: 15px 30px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    border: 0px solid;
+    > span {
+        display: block;
+        font-size: 15px;
+    }
+    > i {
+        margin-left: 8px;
+        &:before {
+            font-size: 18px;
+        }
+    }
+}
+.btn-about:hover {
+    color: $secondary-color;
+}
+
+
+// Tablet layout
+@media #{$tablet-device}{
+    .down-button-group{
+        text-align:center;
+    }
+}
+// Large mobile layout
+@media #{$large-mobile-max}{
+    .down-button-group .btn-default {
+        margin: 0 5px;
+        padding: 12px 35px;
+    }
+    .btn-about {
+        bottom: -30px;
+        font-size: 16px;
+    }
+}
+// Small mobile layout
+@media #{$small-mobile}{
+    .down-button-group{
+        text-align:center;
+        a{
+            padding:0px;
+            &:last-child{
+                padding-top:15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,1180 @@
+// Note: This is layout scss.
+
+/*Layouts styles*/
+
+
+/*List Stule Circle*/
+ul.list_style_circle {
+    margin-bottom: 23px;
+    list-style: none;
+    > li {
+        font-weight: bold; 
+        margin-bottom: 8px;
+        padding-left: 25px;
+        position: relative;
+        color: $primary-color;
+        font-weight: 700;
+        &:before {
+            background-color: $primary-color;
+            border-radius: 50%;
+            content: "";
+            height: 15px;
+            left: 0;
+            position: absolute;
+            top: 5px;
+            width: 15px;
+        }
+    }
+}
+ul.list_style_square {
+    margin-bottom: 20px;
+    list-style: none;
+    > li {
+        margin-bottom: 7px;
+        padding-left: 30px;
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        &:before {
+            content: "";
+            height: 20px;
+            left: 0;
+            position: absolute;
+            top: 2px;
+            width: 20px;
+            background-color: $primary-color;
+        }
+    }
+}
+
+/*List Style Check*/
+.list_style_check {
+    list-style: outside none none;
+    margin-top: 50px;
+    > li {
+        border: 1px solid #f2f2f2;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 10px 0;
+        padding: 10px 20px 14px 63px;
+        position: relative;
+        @include transition(all .2s ease-in-out 0s);
+        &:before {
+            color: #ff3000;
+            content: "";
+            font-family: Flaticon;
+            font-size: 30px;
+            left: 20px;
+            position: absolute;
+            top: 20px;
+        }
+        &:hover {
+            @include box-shadow(0 0 13px rgba(0,0,0,0.09));
+        }
+    }
+}
+
+
+/*Promo Area */
+.promo_area {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 100px 0 110px;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        background-color: #3d228f;
+        content: "";
+        height: 100%;
+        position: absolute;
+        right: -248px;
+        top: 0;
+        @include transform(skewX(-50deg) scale(1.1));
+        width: 36%;
+    }
+}
+.promo_content {
+    > h2 {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0 0 22px;
+    }
+    > p {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    a.btn {
+        border-radius: 35px;
+        font-size: 18px;
+        height: 50px;
+        margin: 10px;
+        padding: 0 45px;
+        text-transform: uppercase;
+    }
+}
+
+
+/*Professional Skill Area */
+.skill_and_inquiry_area >.container  {
+    margin-bottom: -30px;
+    margin-top: -20px;
+}
+.professional_skill_area {
+    padding: 40px 50px 25px;
+    margin-top: 20px;
+    .section_title {
+        padding-bottom: 12px;
+    }
+}
+.single_skill {
+    margin-bottom: 25px;
+    h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: #3a3a3a;
+        > span {
+            color: #767676;
+            float: right;
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 4px;
+        }
+    }
+    .progress {
+        background-color: #E6E6E6;
+        border-radius: 0px;
+        box-shadow: 0 1px 2px transparent inset;
+        height: 10px;
+        border-radius: 10px;
+        overflow: visible;
+        .progress-bar {
+            background-color: $primary-color;
+            border-radius: inherit;
+            position: relative;
+            transition: width 0.5s ease-in-out 0s;
+            z-index: 0;
+        }
+    }
+}
+
+/* Project Inquiry & Get Touch area */
+.get_touch_area {
+    padding: 30px 50px;
+    .section_title {
+        margin-top: -5px;
+        padding-bottom: 13px;
+        > .title__heading {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: none;
+        }
+    }
+    .default_form .form-group {
+        margin-bottom: 10px;
+        overflow: hidden;
+        > .single-select {
+            float: left;
+            margin: 5px 0;
+            width: 33.33%;
+            > span {
+                font-size: 14px;
+            }
+        }
+        textarea {
+            min-height: 125px;
+        }
+        &.form-select {
+            position: relative;
+            &:before {
+                color: #c4c4c4;
+                content: "";
+                font-family: fontawesome;
+                font-size: 20px;
+                line-height: 50px;
+                position: absolute;
+                right: 25px;
+                top: 0;
+            }
+        }
+    }
+    .form-group-btn > .btn-default {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Brand area */
+.brand_clients_area {
+    > .container {
+        margin-bottom: -30px;
+    }
+    .single_brand {
+        padding: 60px 0 50px;
+        margin-bottom: 30px;
+        .single_brand_inner {
+            height: 40px;
+        }
+        img {
+            width: auto !important;
+            margin: 0 auto;
+            opacity: 0.5;
+            @include transition(linear 0.2s);
+        }
+        &:hover img {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+/* Pricint Table area */
+.pricing_table_area .container {
+    margin-bottom: -30px;
+}
+.single_pricing {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid #F5F5F5;
+    .pricing_header {
+        background-color: $primary-color;
+        padding: 20px;
+        .pricing_title { 
+            @include transition(all 0.5s);
+            font-size: 40px;
+            font-weight: 900;
+            margin: 0;
+            text-transform: uppercase;
+            padding: 2px 0 22px;
+            color: $color-white;
+            border-bottom: 1px solid #6647C4;
+        }
+        
+        .price {
+            color: #fff;
+            margin: 10px 0 0;
+            > strong {
+                font-size: 55px;
+                font-weight: 900;
+                > span {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-right: 5px;
+                }
+            }
+            > .price_inner {
+                font-weight: normal;
+                text-align: left;
+                font-size: 12px;
+                display: inline-block;
+                > span {
+                    display: block;
+                    font-size: 20px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+
+    }
+    .pricing_body {
+        text-align: center;
+        > ul {
+            list-style: outside none none;
+            margin-bottom: 13px;
+            > li {
+                line-height: 26px;
+                border-bottom: 1px solid #f5f5f5;
+                padding: 7px 0;
+                &:last-child {
+                    border-bottom: 0px solid;
+                }
+            }
+        }
+    }
+    .pricing_footer {
+        background-color: $primary-color;
+        padding: 25px 0;
+        .btn-default {
+            background-color: #fff;
+            border-color: #fff !important;
+            color: $primary-color !important;
+            font-size: 18px;
+            padding: 0 43px;
+            border-radius: 30px;
+            font-weight: 500;
+            &:focus,
+            &:hover{
+                color: #fff !important;
+                background-color: $secondary-color;
+            }
+        }
+    }
+    &:hover {
+        .pricing_title,
+        .pricing_footer {
+            background-color: $primary-color;
+        }
+    }
+}
+.pricing_table_area.pricing_table_style_two .single_pricing {
+    .pricing_header .pricing_title {
+        text-transform: capitalize;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 3px 0 10px;
+    }
+    .pricing_body {
+        text-align: left;
+        > ul > li  {
+            padding: 7px 10px;
+            font-size: 14px;
+            > i {
+                padding: 0 15px;
+                &:before {
+                    font-size: 16px;
+                    color: #39B54A;
+                }
+            }
+        }
+    }
+    .pricing_footer {
+        padding: 15px 0;
+        > a {
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+
+
+/* Career area */
+.career_thumbs {
+    .thumb {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:hover img {
+            @include transform(scale(1.1));
+            opacity: 0.9;
+        }
+    }
+}
+.career_info > p {
+    line-height: 1.7em;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.single_career {
+    @include box-shadow(0px 0px 20px rgba(0, 0, 0, 0.05));
+    padding: 20px 30px 26px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    .info {
+        flex: 1 1 0;
+        padding-right: 30px;
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+    h3 {
+        color: $primary-color;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 5px 0 10px;
+    }
+    p {
+        line-height: 1.48em;
+        margin-left: 13px;
+    }
+    > a {
+        @include box-shadow(0px 0px 20px rgba(0, 0, 0, 0.05));
+        @include transition(all 0.3s ease-in-out 0s);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        color: $primary-color;
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+}
+
+/* Single Career area */
+.single_career_info.single_career {
+    display: block;
+    > p {
+        margin-bottom: 15px;
+    }
+    ul.list_style_circle {
+        margin-top: 15px;
+        margin-bottom: 18px;
+        > li {
+            font-weight: normal;
+            color: #333333;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            &:before {
+                height: 12px;
+                top: 8px;
+                width: 12px;
+            }
+        }
+    }
+    .career_submit_btn {
+        margin-top: 30px;
+    }
+}
+
+
+/* Appointment Area */
+.appointment_area {
+    .about_thumbnil {
+        position: relative;
+        text-align: center;
+        .info {
+            background-color: #4527a0;
+            border-radius: 50% 50% 0 0;
+            bottom: 0;
+            left: 50%;
+            padding: 40px 15px 25px;
+            position: absolute;
+            width: 220px;
+            @include transition(all 0.25s);
+            margin-left: -110px;
+            > h3 {
+                color: #fff;
+                font-size: 80px;
+                font-weight: 900;
+                margin-top: 0;
+                > span {
+                    display: block;
+                    font-size: 17px;
+                    font-weight: 700;
+                    margin-top: -2px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* owl Dots */
+.owl-dots {
+    text-align: center;
+    > .owl-dot {
+        background-color: #DBDBDB !important;
+        border-radius: 50%;
+        display: inline-block;
+        height: 18px;
+        margin: 0 6px;
+        width: 18px;
+        &.active {
+            background-color: $primary-color !important;
+        }
+    }
+}
+
+/* Counter Area */
+.counter_area {
+    background-color: $primary-color;
+    padding: 80px 0 100px;
+}
+.single_counter {
+    color: #fff;
+    > .counter {
+        color: inherit;
+        font-size: 70px;
+        font-weight: 900;
+    }
+    > h4 {
+        color: inherit;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+    }
+}
+
+
+
+
+/* Contact page */
+
+/* Contact Info Area */
+.contact-info-area .single_contact_info {
+    background-color: #fff;
+    margin-bottom: 0;
+    padding: 30px 30px 25px;
+    > .icon {
+        color: #fff;
+        float: left;
+        height: 40px;
+        left: 0;
+        margin-left: 0;
+        margin-right: 15px;
+        position: relative;
+        top: 4px;
+        width: 40px;
+        &:before {
+            font-size: 18px;
+            line-height: 42px;
+        }
+    }
+    .info {
+        overflow: hidden;
+        text-align: left;
+        > p a {
+            color: #333;
+        }
+    }
+}
+
+/*Newsletter Area*/
+.newsletter {
+    align-items: center;
+    background-color: $primary-color;
+    @include display(flex);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 65px 40px;
+    > div {
+        flex: 1 1 50%;
+    }
+    .section_title {
+        padding-bottom: 0;
+        > .title__heading {
+            font-size: 36px;
+            margin: 0 0 5px;
+            font-weight: bold;
+            color: #fff;
+        }
+        > p {
+            color: #fff;
+            margin-bottom: 0px;
+            letter-spacing: 0;
+        }
+    }
+    .subcribe-form {
+        width: 50%;
+        .input{
+            @include display(flex);
+            height: 60px;
+            position: relative;
+            > span {
+                position: absolute;
+                top: 18px;
+                left: 15px;
+                &:before {
+                    color: #878787;
+                }
+            }
+            input{
+                width:calc(100% - 150px);
+                height: 100%;
+                color: #5d5d5d;
+                font-size: 14px;
+                padding-left: 48px;
+                border: 1px solid #F1F1F1;
+            }
+            .btn-subcribe:hover {
+                background-color: #512DA8;
+            }
+        }
+    }
+}
+.contact_form {
+    padding: 35px 40px;
+    .contact-title {
+        color: $primary-color;
+        font-size: 24px;
+        font-weight: 900;
+        margin: 2px 0 20px;
+    }
+    > .row {
+        margin: 0 -7px;
+        > div {
+            padding: 0 7px;
+        }
+    }
+
+    .form-group {
+        overflow: hidden;
+    }
+    .form-controllar {
+        border: 1px solid #eeeeee !important;
+        background-color: transparent;
+        height: 40px;
+    }
+    textarea.form-controllar {
+        min-height: 110px;
+    }
+    .single-select {
+        float: left;
+        width: 25%;
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    .form-group-btn {
+        margin-top: 15px;
+        .btn-primary {
+            border-radius: 35px;
+            padding: 0 55px;
+        }
+    }
+}
+
+/* Client Carousel */
+#client-carousel .single-logo > img {
+    margin: 0 auto;
+    width: auto;
+}
+.left-nav-container {
+    + .wrapper {
+        .slider.slider--style-2.bg-image {
+            background-position: center center;
+        }
+        .header-area {
+            display: none;
+        }
+    }
+}
+
+
+/* Video player styles */
+.yu2fvl-overlay {
+    background-color: rgba($color-black,0.8);
+    z-index: 99;
+}
+.yu2fvl{
+	z-index: 9999;
+	iframe.yu2fvl-iframe{
+		border: none !important;
+		outline:none;
+	}
+	.yu2fvl-close {
+	    background: #FF7200 none repeat scroll 0 0;
+	    border: medium none;
+	    color: #fff;
+	    cursor: pointer;
+	    height: 40px;
+	    left: 100%;
+	    position: absolute;
+	    right: auto;
+	    top: 0;
+	    width: 40px;
+	    @include transition(all .3s ease-in-out 0s);
+        padding: 0;
+	    &:hover{
+	    	opacity:.8;
+	    }
+	}
+}
+
+/* Google Map */
+#gmaps {
+    height: 415px;
+} 
+
+/* Error Page Styles */
+.error_content {
+    > h2 {
+        color: $primary-color;
+        font-size: 100px;
+        margin: -10px 0 5px;
+        font-weight: 800;
+    }
+    > h3 {
+        color: #ff7200;
+        font-size: 45px;
+        margin: 0 0 25px;
+    }
+    > p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+
+/* Layout Responsive */
+
+// Laptop layouts
+@media #{$laptop-device-max}{
+    .list_style_check { 
+        margin-top: 35px;
+    }
+}
+
+// Notebook layouts
+@media #{$notebook-device-max}{
+    .single_pricing {
+        .pricing_header {
+            .pricing_title {
+                font-size: 24px;
+                padding: 0 0 15px;
+            }
+            .price > strong {
+                font-size: 50px;
+            }
+        }
+        .pricing_body {
+            > ul > li {
+                font-size: 15px;
+            }
+        }
+        .pricing_footer {
+            padding: 25px 0;
+            .btn-default {
+                font-size: 16px;
+                padding: 0 35px;
+            }
+        }
+    }
+    .pricing_table_area.pricing_table_style_two .single_pricing {
+        .pricing_header .pricing_title {
+            font-size: 24px;
+            padding: 0 0 15px;
+        }
+        .pricing_body > ul > li {
+            font-size: 13px;
+            > i {
+                padding: 0 7px 0 0;
+            }
+        }
+       .pricing_footer > a {
+            font-size: 16px;
+        }
+    }
+    .newsletter {
+        padding: 40px 20px;
+        .section_title {
+            > .title__heading {
+                font-size: 32px;
+                margin: 0 0 3px;
+            }   
+            > p {
+                font-size: 15px;
+            }
+        }
+    }
+    .contact_form {
+        padding: 25px 20px;
+    }
+    .promo_area .promo_content {
+        > h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        > p {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+    }
+}
+@media #{$notebook-device}{
+    .single_counter {
+        > .counter {
+            font-size: 52px;
+        }
+        > h4 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    .professional_skill_area {
+        padding: 40px 25px 25px;
+    }
+    .full_width .portfolio_thumb_list > div.col-md-3 {
+        width: 33.33%;
+        &:nth-child(16) {
+            display: none;
+        }
+    }
+    .contact_form .single-select {
+        width: 33%;
+        > span {
+            padding-left: 0px;
+        }
+    }
+    .brand_clients_area .single_brand {
+        padding: 45px 0 35px;
+    }
+}
+// Laptop layouts
+@media #{$laptop-device-max}{
+    .professional_skill_area {
+        padding: 35px 25px 10px;
+    }
+    .booking_form_area {
+        padding-top: 45px;
+    }
+}
+
+// Tablet device
+@media #{$tablet-device-max}{
+    .top_right_owl_bots .owl-dots {
+        top: -73px;
+    }
+    .full_width > .container{
+        width: calc(100% - 120px);
+    }
+    .error_content {
+        > h2 {
+            font-size: 70px;
+        }
+        > h3 {
+            font-size: 32px;
+            margin: 0 0 10px;
+        }
+        > p {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+    }
+    .contact-info-area {
+        > .container {
+            margin-bottom: -30px;
+        }
+        .row {
+            @include display(flex);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .single_contact_info {
+            margin-bottom: 30px;
+        }
+    }
+    .contact_form {
+        padding: 30px 20px;
+        .single-select > span {
+            font-size: 14px;
+            padding-left: 0px;
+        }
+    }
+    #gmaps {
+        height: 380px;
+        margin-bottom: 50px;
+    }
+    .newsletter {
+        display: block;
+        text-align: center;
+        .subcribe-form {
+            margin: 25px auto 0;
+            width: 75%;
+        }
+    }
+    .owl-dots > .owl-dot {
+        height: 15px;
+        margin: 0 4px;
+        width: 15px;
+    }
+    .list_style_check {
+        margin-bottom: -40px;
+    }
+    .pricing_table_area.pricing_table_style_one .row > div:last-child {
+        display: none;
+    }
+    .pricing_table_area.pricing_table_style_two .single_pricing .pricing_body > ul > li {
+        font-size: 15px;
+    }
+    .career_thumbs {
+        margin: 0 -10px;
+        .thumb {
+            float: left;
+            width: 50%;
+            padding: 0 10px;
+            &:last-child {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .career_info > p {
+        margin-left: 0;
+    }
+    .promo_area {
+        padding: 75px 0 65px;
+        &:before {
+            right: -175px;
+            transform: skewX(-35deg) scale(1.1);
+            width: 40%;
+        }
+        .promo_content {
+            > h2 {
+                font-size: 42px;
+            }
+            > p {
+                font-size: 20px;
+            }
+            a.btn {
+                font-size: 16px;
+                margin: 10px 5px;
+            }
+        }
+    }
+    .counter_area > .container {
+        margin-bottom: -30px;
+    }
+    .single_counter {
+        margin-bottom: 30px;
+        > .counter {
+            font-size: 52px;
+        }
+    }
+}
+
+// Large mobile
+@media #{$large-mobile-max}{
+    .container {
+        width: 570px;
+    }
+    .top_right_owl_bots .owl-dots {
+        top: -52px;
+    }
+    ul.list_style_circle > li {
+        margin-bottom: 5px;
+    }
+    .single_skill {
+        h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            > span {
+                font-size: 14px;
+            }
+        }
+        .progress {
+            height: 6px;
+        }
+    }
+    
+    .brand_clients_area .single_brand {
+        padding: 40px 0 32px;
+    }
+    .appointment_area .about_thumbnil .info {
+        padding: 30px 15px;
+    }
+    .full_width > .container {
+        width: 570px;
+        .work_thumb > img {
+            width: 100%;
+        }
+    }
+    .contact_form {
+        margin-top: 0;
+        .single-select {
+            width: 50%;
+            margin: 3px 0;
+        }
+        .form-group-btn {
+            margin-top: 20px;
+        }
+    }
+    #gmaps {
+        height: 300px;
+    }
+    .newsletter {
+        .section_title > .title__heading {
+            font-size: 28px;
+        }
+        .subcribe-form {
+            width: 90%;
+        }
+    }
+    .single_pricing .pricing_footer .btn-default,
+    .pricing_table_area.pricing_table_style_two .single_pricing .pricing_footer > a {
+        font-size: 16px;
+        padding: 0 35px;
+    }
+    .pricing_table_area.pricing_table_style_two .single_pricing .pricing_body > ul > li {
+        font-size: 14px;
+    }
+    .single_career {
+        padding: 20px 25px 25px;
+        .info {
+            padding-right: 15px;
+        }
+    }
+    .newsletter .subcribe-form .input {
+        height: 52px;
+    }
+    .counter_area {
+        padding: 50px 0 35px;
+    }
+    .single_counter {
+        margin-bottom: 40px;
+        > .counter {
+            font-size: 48px;
+            margin: 0;
+        }
+        > h4 {
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            margin: 5px 0 0;
+        }
+    }
+    .counter_area > .container {
+        margin-bottom: 0px;
+    }
+    .promo_area .promo_content {
+        > h2 {
+            font-size: 32px;
+            margin-bottom: 14px;
+        }
+        > p {
+            font-size: 18px;
+        }
+        a.btn {
+            font-size: 15px;
+            height: 40px;
+            padding: 0 30px;
+        }
+    }
+}
+// Large mobile
+@media only screen and (max-width: 600px){
+    .container,
+    .full_width > .container {
+        width: 480px;
+    }
+    .pricing_table_area.pricing_table_style_one .row > div:last-child {
+        display: block;
+    }
+    .top_right_owl_bots .owl-dots {
+        position: static;
+        text-align: center;
+        > div {
+            margin: 0 3px;
+        }
+    }
+    .pricing_table_area .row > div {
+        width: 100%;
+    }
+    .single_pricing {
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+    .list_style_check > li {
+        margin: 7px 0;
+        padding: 10px 15px 14px 50px;
+    }
+    .list_style_check > li::before {
+        font-size: 22px;
+        left: 15px;
+        top: 15px;
+    }
+    .skill_and_inquiry_area > .container {
+        margin-top: 0;
+    }
+    .brand_clients_area .row:nth-child(2) > div {
+        width: 100%;
+    }
+    .newsletter .subcribe-form {
+        width: 100%;
+    }
+    .contact-info-area .single_contact_info {
+        padding: 25px 20px 20px;
+    }
+    .get_touch_area .section_title > .title__heading {
+        font-size: 26px;
+    }
+    .promo_area .promo_content {
+        > h2 {
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+        > p {
+            font-size: 16px;
+        }
+    }
+}
+
+
+// Small mobile
+@media #{$small-mobile}{
+    .container,
+    .full_width > .container {
+        width: 100% !important;
+    } 
+    .professional_skill_area {
+        padding: 25px 15px;
+    }
+    
+    .single_pricing {
+        width: 100%;
+        .pricing_footer {
+            padding: 25px 0 30px;
+            > h2 {
+                font-size: 60px;
+                margin: 0 0 15px;
+            }
+        }
+    }
+    .error_content {
+        > h2 {
+            font-size: 60px;
+        }
+        > h3 {
+            font-size: 28px;
+        }
+    }
+    .contact_form {
+        padding: 15px;
+        .single-select {
+            width: 100%;
+            > span {
+                font-size: 15px;
+                padding-left: 3px;
+            }
+        }
+    }
+    .career_thumbs {
+        margin: 0;
+        > .thumb {
+            float: none;
+            width: 100%;
+            padding: 0;
+            > img {
+                width: 100%;
+            }
+        }
+    }
+    .single_career {
+        padding: 20px 15px 25px;
+    }
+    .newsletter {
+        .subcribe-form .input {
+            display: block;
+            height: auto;
+            input {
+                height: 54px;
+                margin-bottom: 10px;
+                padding-left: 43px;
+                width: 100%;
+            }
+            > span {
+                top: 15px;
+            }
+        }
+    }
+    .counter_area .row > .col-md-3 {
+        width: 100%;
+    }
+}

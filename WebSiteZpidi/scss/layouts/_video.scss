@@ -1,0 +1,113 @@
+// Note: This is video scss.
+
+/*Video styles*/
+.video{
+    &:after {
+        background-color: rgba(69,39,160,0.63);
+        @include transition(all 0.5s);
+    }
+    &:hover:after {
+        background-color: rgba(69,39,160,0.43);
+    }
+    &.bg-image .video__inner {
+        min-height: 540px;
+    }
+	.video__inner{
+		@include display(flex);
+		align-items: center;
+		justify-content:center;
+		a{
+            line-height: 80px;
+			height:80px;
+			width:80px;
+			font-size:40px;
+			color:$color-white;
+			background:$secondary-color;
+			@include border-radius(50%);
+			position:relative;
+			z-index:2;
+            text-align: center;
+			&:hover{
+				&:after, &:before{
+					@include transform(scale(1.5));
+					opacity: 0;
+					visibility: visible;
+					z-index:1;
+				}
+			}
+			i{
+				padding-left:7px;
+			}
+			&:before, &:after{
+				content:"";
+				box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9);
+				left: 0;
+				opacity: 1;
+				top: 0;
+				height:100%;
+				width:100%;
+				position:absolute;
+				@include transform(scale(1));
+				position:absolute;
+				@include transition(all 1s ease-out 0s);
+				border-radius:100%;
+				z-index:1;
+				visibility: hidden;	
+			}
+			&:after{
+				@include transition(all 1s ease-out 0.3s);
+			}
+		}
+	}
+}
+.video_style_one {
+    position: relative;
+    &:before {
+        background-color: $primary-color;
+        bottom: 0;
+        content: "";
+        height: 270px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
+// Tablet device
+@media #{$tablet-device-max}{
+    .video.bg-image .video__inner {
+        min-height: 450px;
+    }
+    .video_style_one::before {
+        height: 225px;
+    }
+}
+// Large mobile device
+@media #{$large-mobile-max}{
+    .video.bg-image .video__inner {
+        min-height: 350px;
+    }
+    .video_style_one::before {
+        height: 175px;
+    }
+    .video .video__inner {
+        min-height: 220px;
+        > a {
+            font-size: 25px;
+            height: 60px;
+            line-height: 60px;
+            width: 60px;
+        }
+    }
+}
+
+// Small device
+@media #{$small-mobile}{
+    .video.bg-image .video__inner {
+        min-height: 280px;
+    }
+    .video_style_one::before {
+        height: 140px;
+    }
+}

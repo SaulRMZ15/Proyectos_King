@@ -1,0 +1,130 @@
+// Note: This is mixins
+
+
+
+// Box sizing
+@mixin box-sizing($bz-value){
+	-webkit-box-sizing: $bz-value;
+	-moz-box-sizing: $bz-value;
+	-ms-box-sizing: $bz-value;
+	-o-box-sizing: $bz-value;
+	box-sizing: $bz-value;
+}
+
+// Box shadow
+@mixin box-shadow($b-shadow){
+	-webkit-box-shadow:$b-shadow;
+	-moz-box-shadow:$b-shadow;
+	-ms-box-shadow:$b-shadow;
+	-o-box-shadow:$b-shadow;
+	box-shadow:$b-shadow;
+}
+
+// Animation
+@mixin animation($animation){
+	-webkit-animation:$animation;
+	-moz-animation:$animation;
+	-ms-animation:$animation;
+	-o-animation:$animation;
+	animation:$animation;
+}
+
+// Transform
+@mixin transform($transform){
+	-webkit-transform:$transform ;
+	-moz-transform:$transform ;
+	-ms-transform:$transform ;
+	-o-transform:$transform ;
+	transform:$transform ;
+}
+
+// Transform Origin
+@mixin transform-origin($transform-origin ) {
+	-webkit-transform-origin : $transform-origin ;
+	-moz-transform-origin : $transform-origin ;
+	-ms-transform-origin : $transform-origin ;
+	-o-transform-origin : $transform-origin ;
+	transform-origin : $transform-origin ;
+}
+
+// Transition
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+// Appearance
+@mixin appearance($appearance){
+	-webkit-appearance:$appearance;
+	-moz-appearance:$appearance;
+	-ms-appearance:$appearance;
+	-o-appearance:$appearance;
+	appearance:$appearance;
+}
+
+// background origin
+@mixin background-origin($b-origin){
+	-webkit-background-origin:$b-origin;
+	-moz-background-origin:$b-origin;
+	-ms-background-origin:$b-origin;
+	-o-background-origin:$b-origin;
+	background-origin:$b-origin;
+}
+
+// Background-size
+@mixin background-size($b-origin){
+	-webkit-background-size:$b-origin;
+	-moz-background-size:$b-origin;
+	-ms-background-size:$b-origin;
+	-o-background-size:$b-origin;
+	background-size:$b-origin;
+}
+
+// Display flex
+@mixin display($d-value){
+	display: -webkit-$d-value;
+	display: -moz-$d-value;
+	display: -ms-$d-value;
+	display: -o-$d-value;
+	display: $d-value;
+}
+
+// Filter
+@mixin filter($filter){
+	-webkit-filter:$filter;
+	-moz-filter:$filter;
+	-ms-filter:$filter;
+	-o-filter:$filter;
+	filter:$filter;
+}
+
+// Text Shadow
+@mixin text-shadow($t-shadow){
+	-webkit-text-shadow:$t-shadow;
+	-moz-text-shadow:$t-shadow;
+	-ms-text-shadow:$t-shadow;
+	-o-text-shadow:$t-shadow;
+	text-shadow:$t-shadow;
+}
+
+// Border radiud
+@mixin border-radius($radius){
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	-ms-border-radius:$radius;
+	-o-border-radius:$radius;
+	border-radius:$radius;
+}
+
+
+// Align Items
+@mixin align-items($items){
+	-webkit-align-items:$items;
+	-moz-align-items:$items;
+	-ms-align-items:$items;
+	-o-align-items:$items;
+	align-items:$items;
+}

@@ -1,0 +1,321 @@
+/*Basic styles*/
+body {
+    font-family: $font-family;
+    font-weight: $body-font-weight;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    background:$body-bg;
+    color:$text-color;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;  
+}
+.single-select {
+    position: relative;
+    input[type="checkbox"] {
+        visibility: hidden;
+    }
+    > label {
+        background: #FAFAFA;
+        cursor: pointer;
+        height: 18px;
+        left: 0;
+        position: absolute;
+        top: 4px;
+        width: 18px;
+        border: 1px solid #D8D8D8;
+        margin-bottom: 0;
+        &:before {
+            content: "";
+            color: #686868;
+            font-family: fontawesome;
+            font-size: 12px;
+            left: 2px;
+            position: absolute;
+            top: -5px;
+        }
+    }
+    input[type="checkbox"]:checked + label::before {
+        opacity: 1; 
+        content: "\f00c";
+        color: $primary-color;
+    }
+    > span {
+        display: inline-block;
+        padding-left: 5px;
+    }
+}
+
+option {
+    background: #fff;
+    border: none;
+    padding:5px 15px 5px 15px;
+}
+.uppercase { 
+    text-transform: uppercase
+}
+.capitalize { 
+    text-transform: capitalize
+}
+h1,h2,h3,h4,h5,h6{
+	a{
+	    color: inherit;		
+	} 
+}
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+*::-moz-selection {
+    background: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}
+span.tooltip-content {
+  color: $text-color;
+  cursor: help;
+  font-weight: 600;
+}
+.f-left {
+    float: left
+}
+.f-right {
+    float: right
+}
+.fix {
+    overflow: hidden
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* Back-to-top */
+#scrollUp{
+    z-index: 999;
+    position: fixed;
+    @include transition(all .3s ease-in-out 0s);
+    margin: 0px;
+    color: #fff !important;
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    border-radius: 4px 4px 0px 0px;
+    background: $primary-color;
+    font-size: 18px;
+    width: 45px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+#scrollUp:hover {
+    height:40px;
+    line-height:40px;
+}
+.ptb-100{
+    padding-top: 100px;
+    padding-bottom:100px;
+}
+.ptb-110{
+    padding-top: 110px;
+    padding-bottom:110px;
+}
+.ptb-125{
+    padding-top: 125px;
+    padding-bottom:125px;
+}
+.pt-110{
+    padding-top:110px;
+}
+.pt-60{
+    padding-top:60px;
+}
+.pb-110 {
+    padding-bottom: 110px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+
+.mtb-100{
+    margin: 100px 0;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.mt-70 {
+    margin-top: 70px;
+}
+
+/* Helper Class*/
+.pos-absolute{
+    position:absolute;
+}
+.pos-relative{
+    position:relative;
+}
+
+.text-white{
+    color:#fff;
+    h1,h2,h3,h4,h5,h6 {
+        color: #fff;
+    }
+}
+.text-primary{
+    color:$primary-color;
+    h1,h2,h3,h4,h5,h6 {
+        color: $primary-color;
+    }
+}
+.text-black{
+    color:#000;
+}
+
+/*Colored background*/
+.bg-white{background:$color-white;}
+.bg-black{background:$color-black;}
+.bg-gray{background:$color-gray;}
+.bg-yellow {
+    background-color: #FF7200;
+}
+.bg-dark{background: #171717;}
+.bg-transparent{ background: transparent !important; }
+
+
+/*image background*/
+ .bg-image{background-clip: initial;background-repeat: no-repeat; background-size: cover; background-origin: initial; background-position: center center; background-repeat: no-repeat; background-size: cover; position: relative; z-index: 0;
+ }
+.bg-img-fixed {
+    background-attachment: fixed;
+}
+
+/* Custom class */
+.shadow__black{
+    @include box-shadow(0 0 32px rgba(0,0,0,0.04));
+    @include transition(all .3s ease-in-out 0s);
+}
+.shadow--theme{
+    @include box-shadow(0px 10px 15px rgba(255,90,96,.4));
+    @include transition(all .3s ease-in-out 0s);
+}
+.shadow--yellow{
+    @include box-shadow(0px 12px 15px rgba(248,199,5,.2));
+    @include transition(all .3s ease-in-out 0s);
+}
+
+.bg_gradient {
+    position: relative;
+    &:before {
+        background: linear-gradient(to top, rgba(55, 160, 0, 1), rgba(55, 160, 0, 1), rgba(55, 160, 0, 1), rgba(55, 160, 0, 0.9), rgba(55, 160, 0, 0.75), rgba(55, 160, 0, 0.6), rgba(55, 160, 0, 0.4), rgba(55, 160, 0, 0.2), rgba(55, 160, 0, 0)) repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 55%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.pos-vertical-middle{
+    @include display(flex);
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:center;
+}
+.tb {
+    display: table;
+    height: 100%;
+    width: 100%;
+    > .tb-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.col-full-width {
+    margin: 0 auto;
+    float: none;
+}
+.bg_overlay {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+    }
+}
+.area_bottom_button > .btn-default {
+    margin-top: 60px;   
+}
+.image_effect {
+    overflow: hidden;
+    > img {
+        @include transition(all 0.35s ease 0s);
+    }
+}
+
+// Notebook device
+@media #{$notebook-device-max}{
+    .ptb-110 {
+        padding-bottom: 85px;
+        padding-top: 85px;
+    }
+    .mtb-100 {
+        margin-top: 85px;
+        margin-bottom: 85px;
+    }
+    .mb-100 {
+        margin-bottom: 70px;
+    }
+    .mb-110 {
+        margin-bottom: 70px;
+    }
+    .pt-110 {
+        padding-top: 85px;
+    }
+}
+
+// Tablet device
+@media #{$tablet-device-max}{
+    .ptb-110 {
+        padding-bottom: 75px;
+        padding-top: 75px;
+    }
+    .mtb-100 {
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+    .pt-110 {
+        padding-top: 75px;
+    }
+    .area_bottom_button > .btn-default {
+        margin-top: 40px;
+    }
+}
+
+// Large mobile device
+@media #{$large-mobile-max}{
+    body {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}

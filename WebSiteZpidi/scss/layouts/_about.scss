@@ -1,0 +1,688 @@
+// Note: This is About Biography scss.
+
+/*about Area styles*/
+.about_content {
+    > h3 {
+        color: #4527a0;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.35em;
+        margin: 0 0 20px;
+    }
+    > p:last-child {
+        margin-bottom: 0;
+    }
+}
+.about_thumb_area {
+    position: relative;
+    .about_thumb {
+        position: relative;
+        &:hover img {
+            @include transform(scale(1.1));
+            opacity: 0.9;
+        }
+        > .video__inner {
+            background-color: rgba(69, 39, 160, 0.4);
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+.about-style-one > .container {
+    padding-bottom: 25px;
+}
+
+.biography-area {
+    .biography_content {
+        .biography_title {
+            color: $primary-color;
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 22px;
+            margin-top: -6px;
+            > span {
+                background-color: $primary-color;
+                color: #fff;
+                display: inline-block;
+                padding: 0 5px;
+            }
+        }
+        > p {
+            line-height: 25px;
+        }
+        .btn {
+            margin-top: 15px;
+        }
+    }
+    .biography_midea {
+        .about_info {
+            border: 3px solid #fff;
+            bottom: 65px;
+            left: 70px;
+            padding: 25px 15px;
+            position: absolute;
+            text-align: center;
+            width: calc(100% - 140px);
+            z-index: 2;
+            > h3 {
+                margin: 0 0 10px;
+            }
+            > p {
+            margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.biography-area .biography_midea,
+.about_thumb_area .biography_midea {
+    overflow: hidden;
+    text-align: right;
+    display: inline-block;
+    &:hover img {
+        @include transform(scale(1.1));
+        opacity: 0.9;
+    }
+}
+
+/****************
+ smart web tab 3
+ ***************/
+.smudge_tab > .smudge_tab_nav {
+    margin-top: -80px;
+    min-height: 160px;
+    position: relative;
+    z-index: 1;
+    > li {
+        text-align: center;
+        float: left;
+        width: 25%;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            background-color: #371C88;
+            height: 3px;
+            width: 0%;
+            transition: all 0.3s;
+        }
+        &:hover:before,
+        &.active:before {
+            width: 100%;
+        }
+        &:nth-child(1) {
+            background-color: #4527A0;
+        }
+        &:nth-child(2) {
+            background-color: #512DA8;
+        }
+        &:nth-child(3) {
+            background-color: #5E35B1;
+        }
+        &:nth-child(4) {
+            background-color: #673AB7;
+        }
+        > a {
+            padding: 40px 0 23px;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            &:focus, 
+            &:hover {
+                background-color: transparent;
+            }
+            i {
+                display: block;
+                margin-bottom: 10px;
+                &:before {
+                    font-size: 35px;
+                }
+            }
+            > p {
+                display: block;
+                font-size: 14px;
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 3px;
+                text-transform: initial;
+            }
+        }
+    }
+}
+
+.nav-tabs > li, 
+.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a:hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #ddd #ddd transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #555;
+    cursor: default;
+}
+.workprocess_tab {
+    border-bottom: 1px solid #EFEFEF;
+    margin-bottom: 40px;
+    > li {
+        text-align: center;
+        float: left;
+        width: 25%;
+        position: relative;
+        margin-bottom: 0;
+        border: 0px solid;
+        > a {
+            border: 0px solid;
+            padding: 5px 0 15px;
+            text-align: center;
+            border-radius: 0px;
+            margin-right: 0px;
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: capitalize;
+            @include transition(linear 0.2s);
+            > span {
+                background-color: #4527a0;
+                border-radius: 50%;
+                color: #fff;
+                display: block;
+                font-size: 22px;
+                font-weight: 900;
+                height: 50px;
+                line-height: 50px;
+                margin: 0 auto 18px;
+                width: 50px;
+            }
+
+            &:focus, 
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        &.active {
+            > a,
+            > a:focus,
+            > a:hover {
+                border: 0px solid;
+            }
+        }
+        &:before {
+            bottom: -2px;
+            content: "";
+            height: 3px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            z-index: 1;
+            transform: translateX(50%);
+            @include transition(linear 0.2s);
+        }
+        &:hover:before,
+        &.active:before {
+            background-color: $primary-color;
+            width: 100%;
+            left: -50%;
+        }
+        &:hover > a,
+        &.active > a,
+        &.active > a:focus{
+            color: $primary-color;
+        }
+    }
+}
+
+
+.best_choice_area {
+    .tab-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin: 0 0 20px;
+        + p {
+            margin-bottom: 5px;
+        } 
+    }
+    &.best_choice_style_two .tab-title {
+        font-size: 46px;
+        color: $primary-color;
+        margin: -5px 0 25px;
+    }
+}
+
+
+.single_process {
+    border-radius: 3px;
+    padding: 30px 15px;
+    text-align: center;
+    margin-top: 20px;
+    @include transition(all 0.18s);
+    > span::before {
+        font-size: 40px;
+        line-height: 1em;
+        @include transition(all 0.18s);
+    }
+    > h3 {
+        @include transition(all 0.18s);
+        font-size: 16px;
+        font-weight: bold;
+        margin: 18px 0 5px;
+    }
+    &:hover {
+        @include box-shadow(0 0 13px rgba(0,0,0,0.07));
+        > span::before,
+        > h3 {
+            color: $primary-color;
+        }
+    }
+}
+.tab-acc-panel-group {
+    padding-top: 18px;
+}
+.tab-acc-panel {
+    box-shadow: none;
+    margin-bottom: 0;
+    .tab-acc-panel-title {
+        margin: 0;
+        @include box-shadow(0 0 13px rgba(0,0,0,0.07));
+        > a {
+            border-left: 4px solid $primary-color;
+            color: $primary-color;
+            display: block;
+            font-weight: bold;
+            line-height: 24px;
+            padding: 13px 14px 13px 10px;
+            text-decoration: none;
+            font-size: 16px;
+            > span {
+                background-color: $primary-color;
+                border-radius: 50%;
+                display: inline-block;
+                float: right;
+                height: 30px;
+                line-height: 30px;
+                position: relative;
+                text-align: center;
+                width: 30px;
+                &:before {
+                    background-color: #fff;
+                    content: " ";
+                    display: inline-block;
+                    height: 2px;
+                    margin-top: -1px;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transition: background-color 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s, width 0.2s ease-in-out 0s;
+                    width: 10px;
+                }
+                &:after {
+                    background-color: #fff;
+                    content: " ";
+                    display: inline-block;
+                    height: 2px;
+                    margin-top: -1px;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transition: background-color 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s, width 0.2s ease-in-out 0s;
+                    width: 10px;
+                }
+            }
+            &.collapsed span {
+                background-color: #767676;
+                &:before {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+    .tab-acc-body {
+        padding: 17px 15px 20px;
+        > p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@media #{$notebook-device-max}{
+    .get_touch_area {
+        padding: 25px;
+        .section_title > .title__heading {
+            margin-bottom: 5px;
+        }
+        .default_form .form-group {
+            .form-controllar {
+                height: 45px;
+            }
+            textarea {
+                min-height: 105px;
+            }
+        }
+    }
+    .appointment_area .about_thumbnil {
+        padding-top: 40px;
+    }
+    .best_choice_area.best_choice_style_two .tab-title {
+        font-size: 36px;
+        margin: -5px 0 20px;
+    }
+    .single_process {
+        margin-top: 20px;
+        padding: 25px 10px 20px;
+        > h3 {
+            font-size: 15px;
+            margin: 10px 0 5px;
+        }
+    }
+    .smudge_tab > .smudge_tab_nav > li > a {
+        font-size: 17px;
+    }
+}
+
+@media #{$notebook-device}{
+    .biography-area .biography_content {
+        .biography_title {
+            font-size: 26px;
+            margin-bottom: 15px;
+            margin-top: -5px;
+        }
+        .list_style_circle {
+            margin-bottom: 20px;
+            > li {
+                margin-bottom: 1px;
+                font-size: 15px;
+                padding-left: 15px;
+                &:before {
+                    height: 12px;
+                    top: 7px;
+                    width: 12px;
+                }
+            }
+        }
+        > p{
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.45em;
+        }
+    }  
+    .about-style-one .about_content {
+        > h3 {
+            font-size: 22px;
+            line-height: 1.2em;
+            margin: -5px 0 10px;
+        }
+        > p {
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+    }
+    ul.list_style_square {
+        margin-bottom: 10px;
+    }
+    .list_style_circle {
+        margin-bottom: 20px;
+        > li {
+            margin-bottom: 1px;
+            font-size: 15px;
+            padding-left: 15px;
+            &:before {
+                height: 12px;
+                top: 7px;
+                width: 12px;
+            }
+        }
+    }
+    ul.list_style_square > li {
+        font-size: 15px;
+        padding-left: 22px;
+        &:before {
+            height: 12px;
+            top: 7px;
+            width: 12px;
+        }
+    }
+    .best_choice_area.best_choice_style_two .tab-title {
+        font-size: 28px;
+        margin: -5px 0 15px;
+        + p {
+            font-size: 15px;
+            line-height: 1.45em;
+        }
+    }
+    .single_process {
+        padding: 20px 10px 15px;
+        > span::before {
+            font-size: 30px;
+        }
+    }
+}
+
+// Tablet device
+@media #{$tablet-device-max}{
+    .about-style-one {
+        .about_thumb_area { 
+            display: inline-block;
+        }
+        .about_content {
+            padding-bottom: 10px;
+        }
+    }
+    .home-three > .about-style-two .smudge_tab_nav {
+        margin-bottom: 0;
+    }
+    .biography-area {
+        > .container {
+            margin-bottom: -20px;
+        }
+        .about_thumb_area {
+            margin-bottom: 0;
+        }
+        .biography_content,
+        .biography_midea { 
+            margin: 10px 0;
+        }
+    }
+    .about_content {
+        > h3 {
+            font-size: 26px;
+            line-height: 1.25em;
+        }
+        > p:last-child {
+            margin-bottom: 25px;
+        }
+    }
+    .about_thumb_area {
+        text-align: center;
+        margin-bottom: 25px;
+        > .about_thumb {
+            display: inline-block;
+            margin: 0 auto;
+        }
+    }
+    .appointment_area .about_thumbnil {
+        margin-bottom: 50px;
+    }
+    .get_touch_area {
+        padding: 30px 40px;
+        .section_title > .title__heading {
+            margin-bottom: 10px;
+        }
+        .default_form .form-group {
+            .form-controllar {
+                height: 50px;
+            }
+            textarea {
+                min-height: 125px;
+            }
+        }
+    }
+    .smudge_tab > .smudge_tab_nav {
+        margin-top: 70px;
+        > li > a {
+            font-size: 14px;
+            > p {
+                margin-top: 0;
+            }
+        }
+    }
+    .tab-acc-panel-group {
+        padding: 20px 0 30px;
+    }
+    .tab-pane.biography-area .biography_content {
+        margin-top: 0;
+    }
+    .best_choice_area.best_choice_style_two .tab-title {
+        margin: 5px 0 20px;
+    }
+    .workprocess_tab > li > a {
+        font-size: 16px;
+        padding: 0 0 15px;
+        > span {
+            font-size: 15px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 auto 7px;
+            width: 40px;
+        }
+    }
+}
+
+
+
+// Large mobile
+@media #{$large-mobile-max}{
+    .biography-area .biography_content {
+        .biography_title {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            margin-top: 5px;
+        }
+    }
+    .biography_style_two .biography_video > .video__inner {
+        border: 5px solid $color-white;
+        height: calc(100% - 40px);
+        left: 20px;
+        top: 20px;
+        width: calc(100% - 40px);
+    }
+    .about_content > h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    ul.list_style_square {
+         margin-bottom: 15px;
+        > li {
+            font-size: 16px;
+            padding-left: 25px;
+            &:before {
+                height: 15px;
+                top: 5px;
+                width: 15px;
+            }
+        }
+    }
+    .appointment_area .about_thumbnil .info {
+        margin-left: -95px;
+        padding: 30px 15px 20px;
+        width: 190px;
+        > h3 {
+        font-size: 56px;
+            > span {
+                font-size: 16px;
+                margin-top: 2px;
+            }
+        }
+    }
+    .smudge_tab > .smudge_tab_nav {
+        margin-bottom: 50px;
+        > li {
+            width: 50%;
+            > a {
+                font-size: 16px;
+            }
+        }
+    }
+    .best_choice_area.best_choice_style_two .tab-title {
+        font-size: 30px;
+    }
+    ul.list_style_circle {
+        margin-bottom: 20px;
+        > li {
+            padding-left: 20px;
+            &:before {
+                height: 12px;
+                top: 7px;
+                width: 12px;
+            }
+        }
+    }
+    ul.list_style_square > li {
+        padding-left: 22px;
+        &:before {
+            height: 12px;
+            top: 7px;
+            width: 12px;
+        }
+    }
+    .workprocess_tab {
+        border-bottom: 0px solid #efefef;
+        margin-bottom: 10px;
+        > li {
+            margin-bottom: 30px;
+            width: 50%;
+        }
+    }
+}
+
+// Large mobile
+@media only screen and (max-width: 600px){
+    .get_touch_area {
+        padding: 30px 20px;
+    }
+}
+
+// Small mobile
+@media #{$small-mobile}{
+    .about_content > h3 {
+        font-size: 20px;
+    }
+    .btn-about {
+        bottom: -26px;
+        font-size: 15px;
+    }
+    .appointment_area .about_thumbnil .info {
+        margin-left: -75px;
+        padding: 25px 0px 17px;
+        width: 150px;
+        > h3 {
+            font-size: 48px;
+            > span {
+                font-size: 14px;
+                margin-top: 2px;
+            }
+        }
+    }
+    .process_setps .row > .col-md-4 {
+        width: 100%;
+    }
+    .smudge_tab > .smudge_tab_nav > li {
+        width: 100%;
+    }
+    .best_choice_area.best_choice_style_two .tab-title {
+        font-size: 26px;
+    }
+}
